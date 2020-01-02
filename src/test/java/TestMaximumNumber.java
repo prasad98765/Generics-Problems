@@ -66,5 +66,70 @@ public class TestMaximumNumber {
         Assert.assertEquals("peach",maxString);
     }
 
+    @Test
+    public void whenGivenPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(30,20,10);
+        Object maxNumber = t1.FindMaximunNumber();
+        Assert.assertEquals(30,maxNumber);
+    }
+
+    @Test
+    public void whenGivenPosition_ShouldReturn2ndPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(20,30,10);
+        Object maxNumber = t1.FindMaximunNumber();
+        Assert.assertEquals(30,maxNumber);
+    }
+
+    @Test
+    public void whenGivenPosition_ShouldReturn3rdPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(10,20,30);
+        Object maxNumber = t1.FindMaximunNumber();
+        Assert.assertEquals(30,maxNumber);
+    }
+
+    @Test
+    public void whenGivenFloatPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(30.1f,20.2f,10.3f);
+        Object maxNumber=t1.FindMaximunNumber();
+        Assert.assertEquals(30.1f, (Float) maxNumber,0.0);
+    }
+
+    @Test
+    public void whenGivenFloatPosition_ShouldReturn2ndPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(30.1f,20.2f,10.3f);
+        Object maxNumber=t1.FindMaximunNumber();
+        Assert.assertEquals(30.1f, (Float) maxNumber,0.0);
+    }
+
+    @Test
+    public void whenGivenFloatPosition_ShouldReturn3rdPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber(30.1f,20.2f,10.3f);
+        Object maxNumber=t1.FindMaximunNumber();
+        Assert.assertEquals(30.1f, (Float) maxNumber,0.0);
+    }
+
+    @Test
+    public void whenGivenStringPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber("Apple","peach","banana");
+        Object maxString=t1.FindMaximunNumber();
+        Assert.assertEquals("peach",maxString);
+    }
+
+    @Test
+    public void whenGivenStringPosition_ShouldReturn2ndPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber("Apple","peach","banana");
+        Object maxString=t1.FindMaximunNumber();
+        Assert.assertEquals("peach",maxString);
+    }
+
+    @Test
+    public void whenGivenStringPosition_ShouldReturn3rdPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber("Apple","peach","banana");
+        Object maxString=t1.FindMaximunNumber();
+        Assert.assertEquals("peach",maxString);
+    }
+
+
+
 
 }
