@@ -21,4 +21,15 @@ public class FindMaximunNumber {
         }
         return maxNumber;
     }
+
+    public String FindStringMax(String a, String b, String c) {
+        String maxNumber = a;
+        if (b.compareTo(maxNumber) > 0){
+            maxNumber=b;
+        }
+        if (c.compareTo(maxNumber) > 0){
+            maxNumber=c;
+        }
+        return maxNumber;
+    }
 }

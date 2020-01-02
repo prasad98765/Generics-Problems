@@ -44,4 +44,27 @@ public class TestMaximumNumber {
         float maxNumber=t1.FindFloatMaxNumber(20.1f,10.2f,30.3f);
         Assert.assertEquals(30.3f,maxNumber,0.0);
     }
+
+    @Test
+    public void whenGiven1stStringPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber();
+        String maxString=t1.FindStringMax("peach","apple","banana");
+        Assert.assertEquals("peach",maxString);
+    }
+
+    @Test
+    public void whenGiven2stStringPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber();
+        String maxString=t1.FindStringMax("Apple","peach","banana");
+        Assert.assertEquals("peach",maxString);
+    }
+
+    @Test
+    public void whenGiven3stStringPosition_ShouldReturn1stPositionMaximum() {
+        FindMaximunNumber t1=new FindMaximunNumber();
+        String maxString=t1.FindStringMax("banana","apple","peach");
+        Assert.assertEquals("peach",maxString);
+    }
+
+
 }
