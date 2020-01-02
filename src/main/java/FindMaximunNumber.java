@@ -10,4 +10,15 @@ public class FindMaximunNumber {
         }
         return maxNumber;
     }
+
+    public Float FindFloatMaxNumber(Float a, Float b, Float c) {
+        Float maxNumber = a;
+        if (b.compareTo(maxNumber) > 0){
+            maxNumber=b;
+        }
+        if (c.compareTo(maxNumber) > 0){
+            maxNumber=c;
+        }
+        return maxNumber;
+    }
 }
