@@ -13,7 +13,12 @@ public class FindMaximunNumber<E extends Comparable> {
     public static <E extends Comparable> E FindMaximum(E... value) {
         E[] Array=value;
         Arrays.sort(value);
+        printmax(value[(value.length)-1]);
         return value[(value.length)-1];
+    }
+
+    public static <E extends Comparable> void printmax(E maximumvv) {
+        System.out.println("Maximum value is: "+maximumvv);
     }
 
     public Object FindMaximunNumber() {
